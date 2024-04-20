@@ -1,0 +1,85 @@
+[15:57, 4/20/2024] Navy B14: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcycling Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to the Upcycling Hub</h1>
+    <p>Transform your clothes into something new!</p>
+  </header>
+
+  <!-- Submission Form Section -->
+  <section id="submission-form">
+    <h2>Submit Your Clothes for Upcycling</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="description">Clothing Description:</label>
+      <textarea id="description" name="description" required></textarea>
+      <label for="photos">Upload Photos:</label>
+      <input type="file" id="photos" name="photos[]" accept="image/*" multiple required>
+      <label for="style">Upcycling Style:</label>
+      <select id="style" name="style">
+        <option value="casual">Casual</option>
+        <option value="bold">Bold</option>
+        <option value="fashion-forward">Fashion Forward</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Guidelines Section -->
+  <section id="guidelines">
+    <h2>Guidelines for Upcycling</h2>
+    <p>Follow these tips to ensure successful upcycling:</p>
+    <ul>
+      <li>Choose clothes made of durable fabric.</li>
+      <li>Avoid clothes with irreversible damage.</li>
+      <li>Clean the clothes before submission.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Check out some of the amazing upcycling transformations:</p>
+    <!-- Add gallery images and testimonials here -->
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <dl>
+      <dt>Q: What is upcycling?</dt>
+      <dd>A: Upcycling is the process of transforming old or unwanted materials into something new and useful.</dd>
+      <!-- Add more FAQs and answers as needed -->
+      <dt>Q: How long does the upcycling process take?</dt>
+      <dd>A: The duration depends on various factors such as the complexity of the design and current workload. On average, it may take 2-4 weeks.</dd>
+      <dt>Q: Do you accept clothes with stains or minor damages?</dt>
+      <dd>A: We recommend submitting clothes in good condition as it ensures better results. However, minor stains or damages can sometimes be addressed during the upcycling process.</dd>
+    </dl>
+  </section>
+
+  <!-- Contact Section -->
+  <footer>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+    <p>Email: info@upcyclinghub.com</p>
+    <p>Follow us on social media:</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
