@@ -1,10 +1,10 @@
-[15:57, 4/20/2024] Navy B14: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Upcycling Hub</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/Upcycling/style.css">
 </head>
 <body>
 
@@ -15,36 +15,39 @@
   </header>
 
   <!-- Submission Form Section -->
-  <section id="submission-form">
-    <h2>Submit Your Clothes for Upcycling</h2>
-    <form action="submit.php" method="post" enctype="multipart/form-data">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="description">Clothing Description:</label>
-      <textarea id="description" name="description" required></textarea>
-      <label for="photos">Upload Photos:</label>
-      <input type="file" id="photos" name="photos[]" accept="image/*" multiple required>
-      <label for="style">Upcycling Style:</label>
-      <select id="style" name="style">
-        <option value="casual">Casual</option>
-        <option value="bold">Bold</option>
-        <option value="fashion-forward">Fashion Forward</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+  <section id="Product-Details">
+    <a href="/Upcycling/details/details.html">
+        <h2>Product Details</h2>
+    </a>
+</section>
+
 
   <!-- Guidelines Section -->
-  <section id="guidelines">
-    <h2>Guidelines for Upcycling</h2>
-    <p>Follow these tips to ensure successful upcycling:</p>
-    <ul>
-      <li>Choose clothes made of durable fabric.</li>
-      <li>Avoid clothes with irreversible damage.</li>
-      <li>Clean the clothes before submission.</li>
-    </ul>
+  <section id="Guidelines">
+    <a href="/Upcycling/guide/index.html">
+        <h2>Guidelines</h2>
+    </a>
+</section>
+
+  <!-- Preference Section -->
+  <section id="Preferences">
+    <a href="/Upcycling/preference/index.html">
+        <h2>Upgradation Preferences</h2>
+    </a>
+</section>
+
+
+
+  <!-- Budget Section -->
+  <section id="budget">
+    <h2>Budget</h2>
+    <!-- Add budget details here -->
+  </section>
+
+  <!-- Final Product Details Section -->
+  <section id="final-product-details">
+    <h2>Final Product Images and Details</h2>
+    <!-- Add final product images and details here -->
   </section>
 
   <!-- Gallery Section -->

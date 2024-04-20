@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcycling Application Form</title>
+  <link rel="stylesheet" href="/Upcycling/details/details.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Upcycling Application Form</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="description">Description of Items:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="photos">Upload Photos:</label>
+        <input type="file" id="photos" name="photos[]" accept="image/*" multiple required>
+      </div>
+      <div class="form-group">
+        <label for="preferences">Upcycling Preferences:</label>
+        <textarea id="preferences" name="preferences"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="budget">Budget:</label>
+        <input type="text" id="budget" name="budget">
+      </div>
+      <div class="form-group">
+        <label for="timeline">Timeline:</label>
+        <input type="text" id="timeline" name="timeline">
+      </div>
+      <div class="form-group">
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

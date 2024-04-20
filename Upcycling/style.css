@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffc0cb, #ffdab9); /* Gradient background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center; /* Center align headings */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Submission Form */
+#submission-form {
+    padding: 50px 0;
+}
+
+#submission-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#submission-form label,
+#submission-form input[type="text"],
+#submission-form input[type="email"],
+#submission-form textarea,
+#submission-form select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submission-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Guidelines */
+#guidelines {
+    padding: 50px 0;
+    text-align: center; /* Center align guidelines */
+}
+
+#guidelines p,
+#guidelines ul {
+    margin-bottom: 20px;
+    text-align: left; /* Left align guideline content */
+}
+
+#guidelines ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* User and Product Details */
+#user-product-details {
+    padding: 50px 0;
+}
+
+/* Upgradation Details */
+#upgradation-details {
+    padding: 50px 0;
+}
+
+/* Budget Section */
+#budget {
+    padding: 50px 0;
+}
+
+/* Final Product Details */
+#final-product-details {
+    padding: 50px 0;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 0;
+}
+
+/* FAQs */
+#faqs {
+    padding: 50px 0;
+}
+
+#faqs dl {
+    margin-bottom: 20px;
+}
+
+#faqs dt {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#faqs dd {
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
