@@ -56,15 +56,15 @@ def generate_recommendation(personality, body_type, skin_tone):
     elif personality == 'C':
         if body_type == 'Straight':
             recommendation['outfits'] = [
-                "\static\images\bold_straight.jpg"
+                "\static\images\Bold_straight.jpg"
             ]
         elif body_type == 'Hourglass':
             recommendation['outfits'] = [
-                "\static\images\bold_hourglass.jpg"
+                "\static\images\Bold_hourglass.jpg"
             ]
         elif body_type == 'Pear':
             recommendation['outfits'] = [
-                "\static\images\bold_pear.jpg"
+                "\static\images\Bold_pear.jpg"
             ]
 
 
@@ -86,23 +86,23 @@ def generate_recommendation(personality, body_type, skin_tone):
     elif personality == 'E':
         if body_type == 'Straight':
             recommendation['outfits'] = [
-                "\static\images\trendy_straight.jpg"
+                "\static\images\Trendy_straight.jpg"
             ]
         elif body_type == 'Hourglass':
             recommendation['outfits'] = [
-                "\static\images\trendy_hourglass.jpg"
+                "\static\images\Trendy_hourglass.jpg"
             ]
         elif body_type == 'Pear':
             recommendation['outfits'] = [
-                "\static\images\trendy_pear.jpg"
+                "\static\images\Trendy_pear.jpg"
             ]
     # Add more conditions for other personalities
 
     # Color palette photo based on skin tone
     if skin_tone == 'Warm':
-        recommendation['color_palette'] = "\static\images\warmrecommend.jpg"
+        recommendation['color_palette'] = "\static\images\warmrecommend.png"
     elif skin_tone == 'Cool':
-        recommendation['color_palette'] = "\static\images\coolrecommend.jpg"
+        recommendation['color_palette'] = "\static\images\coolrecommend.png"
 
     return recommendation
 
