@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion AI Stylist</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>FASHION AI STYLIST</h1>
+    <div class="container">
+        <form id="step-form" action="/recommend" method="POST">
+            <div id="step1" class="step container">
+                <h2><label for="personality">Choose your personality type:</label></h2><br>
+                <div class="choice">
+                    <input type="radio" id="personality_a" name="personality" value="A">
+                    <label for="personality_a">I like to be casual, and down to earth, I love the comfort and easy to care for clothes.</label>
+                    <label for="personality_a" class="choice-label"><img src="\static\images\casual.jpg" alt="Personality A"></label>
+                </div>
+
+                <div class="choice">
+                    <input type="radio" id="personality_b" name="personality" value="B">
+                    <label for="personality_b">I am spirited, and self-expressed, and originality is key.</label>
+                    <label for="personality_b" class="choice-label"><img src="\static\images\spirited.jpg" alt="Personality B"></label>                    
+                </div>
+
+                <div class="choice">
+                    <input type="radio" id="personality_c" name="personality" value="C">
+                    <label for="personality_c">I am bold and like to stand out in a crowd and wear striking clothes that make a statement.</label>
+                    <label for="personality_c" class="choice-label"><img src="\static\images\bold.jpg" alt="Personality C"></label>
+                </div>
+            
+                <div class="choice">
+                    <input type="radio" id="personality_d" name="personality" value="D">
+                    <label for="personality_d">I am sensitive, gentle and supportive and love feminine details such as lace, gathers, and frills.</label>
+                    <label for="personality_d" class="choice-label"><img src="\static\images\gentle.jpg" alt="Personality D"></label>
+                </div>
+                
+                <div class="choice">
+                    <input type="radio" id="personality_e" name="personality" value="E">
+                    <label for="personality_e">I am cultured and poised and compliment my lifestyle with polished, fashion-forward clothing.</label>
+                    <label for="personality_e" class="choice-label"><img src="\static\images\classy.jpg" alt="Personality E"></label>
+                </div>
+                <br>
+
+                <button type="button" onclick="nextStep()">Next</button>
+            </div>
+
+            <div id="step2" class="step hidden">
+                <h2><label for="body_type">Choose your Body Type:</label></h2>
+
+                <div class="choice">
+                    <input type="radio" id="body_type_a" name="body_type" value="Straight">
+                    <label for="body_type_a">Straight</label><br>
+                    <label for="body_type_a" class="choice-label"><img src="/static/images/straight.jpg" alt="Straight Body Type"></label>
+                </div>
+                
+                <div class="choice">
+                    <input type="radio" id="body_type_b" name="body_type" value="Hourglass">
+                    <label for="body_type_b">Hourglass</label><br>
+                    <label for="body_type_b" class="choice-label"><img src="\static\images\hourglass.jpg" alt="Hourglass Body Type"></label><br>   
+                </div>
+                
+                <div class="choice">
+                    <input type="radio" id="body_type_c" name="body_type" value="Pear">
+                    <label for="body_type_c">Pear Shaped</label><br>
+                    <label for="body_type_c" class="choice-label"><img src="\static\images\triangle.jpg" alt="Pear Body Type"></label>
+                </div>
+
+                <br>
+                <button type="button" onclick="prevStep()">Previous</button>
+                <button type="button" onclick="nextStep()">Next</button>
+            </div>
+
+            <div id="step3" class="step hidden">
+                <h2><label for="skin_tone">Choose your Skin Tone:</label></h2>
+        
+                <div class="choice">
+                    <input type="radio" id="skin_tone_a" name="skin_tone" value="Warm">
+                    <label for="skin_tone_a">Warm toned</label><br>
+                    <label for="skin_tone_a" class="choice-label"><img src="\static\images\warmtones.png" alt="Warm Toned"></label>    
+                </div>
+                
+                <div class="choice">
+                    <input type="radio" id="skin_tone_b" name="skin_tone" value="Cool">
+                    <label for="skin_tone_b">Cool toned</label><br><br>
+                    <label for="skin_tone_b" class="choice-label"><img src="\static\images\cooltone.png" alt="Cool Toned"></label><br>
+                </div>
+        
+                <br>
+                <button type="button" onclick="prevStep()">Previous</button>
+                <button type="submit" value="Get Outfit Recommendation">Get Outfit Recommendation</button>
+            </div>
+  
+        </form>
+    </div>
+
+    <script>
+        function nextStep() {
+            var currentStep = document.querySelector('.step:not(.hidden)');
+            var nextStep = currentStep.nextElementSibling;
+            if (nextStep) {
+                currentStep.classList.add('hidden');
+                nextStep.classList.remove('hidden');
+            }
+        }
+
+        function prevStep() {
+            var currentStep = document.querySelector('.step:not(.hidden)');
+            var prevStep = currentStep.previousElementSibling;
+            if (prevStep) {
+                currentStep.classList.add('hidden');
+                prevStep.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
