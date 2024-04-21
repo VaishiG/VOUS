@@ -9,11 +9,15 @@
 </head>
 <body>
     <h1>Recommendation</h1>
-    <h2>Outfit Recommendations:</h2>
-    <ul>
-            <li><img src="{{ recommendation.outfits }}" alt="Outfit"></li>
-    </ul>
-    <h2>Color Palette:</h2>
-    <img src="{{ recommendation.color_palette }}" alt="Color Palette">
+    <div class="container">
+        <h2>Outfit Recommendations:</h2>
+        {% for outfit in recommendation.outfits %}
+            <img src="{{ outfit }}" alt="Outfit">
+        {% endfor %}
+        <br><br>
+        <h2>Color Palette:</h2>
+        <img src="{{ recommendation.color_palette }}" alt="Color Palette">
+    </div>
+    
 </body>
 </html>
