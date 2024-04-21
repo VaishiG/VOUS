@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Upcycling Budget</title>
-<link rel="stylesheet" href="/Upcycling/Budget/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcycling Budget</title>
+  <link rel="stylesheet" href="/Upcycling/Budget/style.css">
 </head>
+
 <body>
 
-<div class="container">
-  <h1>Upcycling Budget</h1>
-  <div class="budget-form">
-    <form>
-      <div class="form-group">
-        <label for="budget">Budget Allocation:</label>
-        <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
-      </div>
-      <div class="form-group">
-        <label>Cost Breakdown:</label>
-        <div class="radio-group">
-          <div class="radio-option">
-            <input type="radio" id="labor" name="cost-breakdown" value="labor">
-            <label for="labor">Labor</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="materials" name="cost-breakdown" value="materials">
-            <label for="materials">Materials</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="additional-features" name="cost-breakdown" value="additional-features">
-            <label for="additional-features">Additional Features</label>
+  <div class="container">
+    <h1>Upcycling Budget</h1>
+    <div class="budget-form">
+      <form>
+        <div class="form-group">
+          <label for="budget">Budget Allocation:</label>
+          <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+        </div>
+        <div class="form-group">
+          <label>Cost Breakdown:</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="labor" name="cost-breakdown" value="labor">
+              <label for="labor">Labor</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="materials" name="cost-breakdown" value="materials">
+              <label for="materials">Materials</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="additional-features" name="cost-breakdown" value="additional-features">
+              <label for="additional-features">Additional Features</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="cost-estimation">Cost Estimation:</label>
-        <textarea id="cost-estimation" name="cost-estimation" placeholder="Provide details or estimates"></textarea>
-      </div>
-      <div class="form-group">
-        <label>Accepted Payment Methods:</label>
-        <div class="radio-group">
-          <div class="radio-option">
-            <input type="radio" id="gpay" name="payment-method" value="gpay">
-            <label for="gpay">Google Pay (GPay)</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="paytm" name="payment-method" value="paytm">
-            <label for="paytm">Paytm</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="phonepay" name="payment-method" value="phonepay">
-            <label for="phonepay">PhonePe</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="debit-card" name="payment-method" value="debit-card">
-            <label for="debit-card">Debit Card</label>
+        <div class="form-group">
+          <label for="cost-estimation">Cost Estimation:</label>
+          <textarea id="cost-estimation" name="cost-estimation" placeholder="Provide details or estimates"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Accepted Payment Methods:</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="gpay" name="payment-method" value="gpay">
+              <label for="gpay">Google Pay (GPay)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="paytm" name="payment-method" value="paytm">
+              <label for="paytm">Paytm</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="phonepay" name="payment-method" value="phonepay">
+              <label for="phonepay">PhonePe</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+              <label for="debit-card">Debit Card</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="upi-id">Enter UPI ID:</label>
-        <input type="text" id="upi-id" name="upi-id" placeholder="Enter your UPI ID">
-      </div>
-      <div class="form-group">
-        <label for="budget-constraints">Budget Constraints:</label>
-        <textarea id="budget-constraints" name="budget-constraints" placeholder="Notify users of budget constraints or offer alternative suggestions"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="cost-transparency">Cost Transparency:</label>
-        <ul id="cost-transparency">
-          <li>Outline pricing:</li>
-          <li>Additional charges:</li>
-        </ul>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+        <div class="form-group">
+          <label for="upi-id">Enter UPI ID:</label>
+          <input type="text" id="upi-id" name="upi-id" placeholder="Enter your UPI ID">
+        </div>
+        <div class="form-group">
+          <label for="cost-transparency">Cost Transparency:</label>
+          <ul id="cost-transparency">
+            <li>Outline pricing:</li>
+            <li>Additional charges:</li>
+          </ul>
+        </div>
+        <!-- Expense Tracker -->
+        <section id="Expense-Tracker">
+          <a href="/Upcycling/Budget/Expense-Tracker/Expense-Tracker.html">
+            <h2>Expense Tracker</h2>
+          </a>
+        </section>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
-</div>
 
 </body>
+
 </html>

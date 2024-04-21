@@ -1,7 +1,5 @@
 # VOUS Fashion Website
 
-<h1>VOUS</h1>
-
 ## Features:
 
 <h2>1. Fashion AI Stylist</h2> 
