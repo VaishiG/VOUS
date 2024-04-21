@@ -33,7 +33,7 @@
                 <div class="choice">
                     <input type="radio" id="personality_c" name="personality" value="C">
                     <label for="personality_c">I am bold and like to stand out in a crowd and wear striking clothes that make a statement.</label>
-                    <label for="personality_c" class="choice-label"><img src="\static\images\bold.jpg" alt="Personality C"></label>
+                    <label for="personality_c" class="choice-label"><img src="\static\images\Bold.jpg" alt="Personality C"></label>
                 </div>
             
                 <div class="choice">
@@ -108,6 +108,7 @@
             if (nextStep) {
                 currentStep.classList.add('hidden');
                 nextStep.classList.remove('hidden');
+                nextStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
 
@@ -117,6 +118,7 @@
             if (prevStep) {
                 currentStep.classList.add('hidden');
                 prevStep.classList.remove('hidden');
+                prevStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
     </script>
