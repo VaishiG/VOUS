@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Change font family */
+    background-color: #EFECEC;
+    color: #0C2D57;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #FC6736;
+    text-align: center;
+    font-size: 2.5em; /* Increase font size */
+}
+
+.choice-heading {
+    background-color: #FFB0B0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Make heading bold */
+}
+
+.choice-heading label {
+    font-size: 1.2em; /* Increase font size */
+}
+.choice img {
+    width: 150px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make images display as block elements */
+    margin: 10px auto; /* Add margin to center images horizontally */
+    border-radius: 5px; /* Add rounded corners to images */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow for styling */
+    cursor: pointer;
+}
+.choice {
+    background-color: #FFB0B0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(68, 61, 70, 0.913) 15px 20px 40px,
+                rgba(171, 166, 171, 0.788) 5px 5px 10px;
+}
+
+.choice label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1.1em; /* Increase font size */
+    font-weight: bold; /* Make label text bold */
+}
+button {
+    background-color: #FC6736;
+    color: #FFF;
+    border: none;
+    padding: 15px 30px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Increase font size */
+}
+
+button:hover {
+    background-color: #FF8C00;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+}
